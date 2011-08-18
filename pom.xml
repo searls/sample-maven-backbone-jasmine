@@ -30,21 +30,21 @@
           </execution>
         </executions>        
       	<configuration>
-      	  <jsSrcDir>${basedir}/src/main/webapp/javascript</jsSrcDir> 
-      	  <jsTestSrcDir>${basedir}/src/test/javascript</jsTestSrcDir>
+      	  <jsSrcDir>${project.basedir}/src/main/webapp/javascript</jsSrcDir> 
+      	  <jsTestSrcDir>${project.basedir}/src/test/javascript</jsTestSrcDir>
       	  <sourceIncludes>
-			<include>vendor/*.js</include>
 			<include>models/*.js</include>
 			<include>collections/*.js</include>
-			<include>views/*.js</include>
-		  </sourceIncludes> 
-			            
+			<include>views/FriendView.js</include>
+			<include>views/AppView.js</include>
+		  </sourceIncludes>
+		  
       	  <preloadSources>
       	  	<source>${basedir}/src/main/webapp/javascript/vendor/jquery.min.js</source>
       	  	<source>${basedir}/src/main/webapp/javascript/vendor/underscore-min.js</source>
       	  	<source>${basedir}/src/main/webapp/javascript/vendor/backbone-min.js</source>
       	  	<source>${basedir}/src/test/javascript/vendor/jasmine-jquery-1.3.1.js</source>
-      	  </preloadSources>
+      	  </preloadSources>       	  
 		</configuration> 
       </plugin>      
     </plugins>
