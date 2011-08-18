@@ -34,7 +34,9 @@
       	  <jsTestSrcDir>${basedir}/src/test/javascript</jsTestSrcDir>
       	  <sourceIncludes>
 			<include>vendor/*.js</include>
-			<include>*.js</include>
+			<include>models/*.js</include>
+			<include>collections/*.js</include>
+			<include>views/*.js</include>
 		  </sourceIncludes> 
 			            
       	  <preloadSources>

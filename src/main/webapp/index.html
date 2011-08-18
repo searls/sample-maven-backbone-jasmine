@@ -1,5 +1,39 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title>BackboneJS</title>
+</head>
 <body>
-<h2>Hello World!</h2>
+	<a href="index.html">Back to home</a>
+	<br /><br />
+    <div>
+        In this example, we:
+        <ul>
+        	<li>create new friends.</li>
+        </ul>  
+    </div>
+    <div id="friends-app">
+        <form id="add-friend">
+            <label>Who's your friend: </label>
+            <input name="first-name" type="text"></input>
+        </form>
+        <ul id="friends-list">
+        </ul>
+    </div>
+    <script type="text/template" id="friend-template">
+        <%= name %>
+    </script>
+    <script src="javascript/vendor/jquery.min.js"></script>
+    <script src="javascript/vendor/underscore-min.js"></script>
+    <script src="javascript/vendor/backbone-min.js"></script>
+    <script src="javascript/models/Friend.js"></script>
+    <script src="javascript/collections/Friends.js"></script>
+    <script src="javascript/views/FriendView.js"></script>
+    <script src="javascript/views/AppView.js"></script>
+    <script>
+    (function($){
+    	var fbook = new AppView;
+    })(jQuery);
+    </script>
 </body>
 </html>
