@@ -1,7 +1,8 @@
 FriendView = Backbone.View.extend({
 	tagName: "li",
 
-	template: _.template($("#friend-template").html()),
+	template: function() { return _.template($("#friend-template").html()); },
+
 	// template: _.template("<%= name %>"),
 	
 	render: function () {
